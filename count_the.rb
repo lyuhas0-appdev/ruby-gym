@@ -4,3 +4,5 @@
 #   and finally prints, "'the' appeared x times", where x is an Integer
 
 p "Enter a sentence:"
+sentence = gets.chomp.split
+p "The appeared #{sentence.count("the")} times."
