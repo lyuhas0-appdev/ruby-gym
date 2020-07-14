@@ -6,3 +6,6 @@
 # Your program should print the encoded message.
 
 p "Enter in the secret you want to encode"
+secret = gets.chomp
+encoded_secret = secret.gsub("a","1").gsub("e","2").gsub("i","3").gsub("o","4").gsub("u","5")
+p encoded_secret

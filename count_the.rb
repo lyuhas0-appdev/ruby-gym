@@ -5,4 +5,4 @@
 
 p "Enter a sentence:"
 sentence = gets.chomp.split
-p "The appeared #{sentence.count("the")} times."
+p "'the' appeared #{sentence.count("the")} times"
