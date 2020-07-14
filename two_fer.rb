@@ -8,4 +8,12 @@
 
 # If no name is given, the result should be "One for you, one for me."
 
+
 p "Enter a name:"
+name = gets.chomp
+
+if name == ""
+  name = "you"
+end
+
+p "One for #{name}, one for me."
