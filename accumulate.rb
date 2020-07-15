@@ -6,9 +6,14 @@
 p "Are we there yet?"
 
 answer = gets.chomp.downcase
+answer_history = Array.new
+answer_history.push(answer)
 
 while answer != "yes"
   p "Are we there yet?"
   
   answer = gets.chomp.downcase
+  answer_history.push(answer)
 end
+
+p answer_history

@@ -30,6 +30,31 @@ unpredictable_inputs = [
 some_random_input = unpredictable_inputs.sample
 
 p some_random_input
+p some_random_input.class
 
-# Write your code below
+days_of_the_week = { 0 => "sunday", 1 => "monday", 2 => "tuesday", 3 => "wednesday", 4 => "thursday", 5 => "friday", 6 => "saturday"}
+
+input_class = some_random_input.class 
+  
+if input_class == String
+  p some_random_input.to_s.downcase
+elsif input_class == Time
+  p days_of_the_week[some_random_input.wday]
+elsif input_class == Integer
+  if some_random_input.odd?
+    p some_random_input.to_s + " is odd"
+  elsif
+    p some_random_input.to_s + " is even"
+  end
+elsif input_class == TrueClass
+  p "you may pass"
+elsif input_class == FalseClass
+  p "you may not pass"
+elsif input_class == Hash
+  p some_random_input.keys
+elsif input_class == NilClass
+  p "no object provided"
+elsif input_class == Symbol
+  p ":" + some_random_input.to_s.downcase
+end
 

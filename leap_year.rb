@@ -19,19 +19,12 @@ div_by_4 = year%4 == 0
 div_by_100 = year%100 == 0
 div_by_400 = year%400 == 0
 
-p div_by_100.to_s + " - div by 100"
-p div_by_400.to_s + " - div by 400"
-p div_by_4.to_s + " - div by 4"
-
 if !div_by_4
-  p "Year is not divisible by 4"
-  leap_year = false
-elsif div_by_4 && !
-elsif !div_by_100 && !div_by_400
-  p "year is not divisble by 100 and 400"
-  leap_year = false
+  p year.to_s + " is not a leap year."
+elsif div_by_4 && !div_by_100
+  p year.to_s + " is a leap year!"
+elsif div_by_4 && div_by_100 && div_by_400
+  p year.to_s + " is a leap year!"
 else 
-  leap_year = true
+  p year.to_s + " is not a leap year."
 end
-
-p leap_year
