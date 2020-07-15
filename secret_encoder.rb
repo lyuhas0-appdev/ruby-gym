@@ -7,5 +7,5 @@
 
 p "Enter in the secret you want to encode"
 secret = gets.chomp
-encoded_secret = secret.gsub("a","1").gsub("e","2").gsub("i","3").gsub("o","4").gsub("u","5")
+encoded_secret = secret.gsub("a","1").gsub("A","1").gsub("e","2").gsub("E","2").gsub("i","3").gsub("I","3").gsub("o","4").gsub("O","4").gsub("u","5").gsub("U","5")
 p encoded_secret

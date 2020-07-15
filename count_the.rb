@@ -5,4 +5,7 @@
 
 p "Enter a sentence:"
 sentence = gets.chomp.split
+
+sentence.map! {|word| word.downcase.gsub(/[^a-z]/i, "")}
+
 p "'the' appeared #{sentence.count("the")} times"

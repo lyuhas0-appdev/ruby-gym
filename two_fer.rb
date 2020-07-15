@@ -10,7 +10,7 @@
 
 
 p "Enter a name:"
-name = gets.chomp
+name = gets.chomp.capitalize
 
 if name == ""
   name = "you"
